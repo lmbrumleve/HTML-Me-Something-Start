@@ -9,6 +9,10 @@ const rambutanAudio = document.getElementById("rambutan");
 const salakAudio = document.getElementById("salak");
 const belimbingAudio = document.getElementById("belimbing");
 const pepayaAudio = document.getElementById("pepaya");
+const rendangAudio = document.getElementById("rendang");
+const sambalAudio = document.getElementById("sambal");
+const buleAudio = document.getElementById("bule");
+const jerukNipisAudio = document.getElementById("jeruk-nipis");
 
 //Button variables
 const durianButton = document.getElementById("durianButton");
@@ -19,6 +23,10 @@ const rambutanButton = document.getElementById("rambutanButton");
 const salakButton = document.getElementById("salakButton");
 const belimbingButton = document.getElementById("belimbingButton");
 const pepayaButton = document.getElementById("pepayaButton");
+const rendangButton = document.getElementById("rendangButton");
+const sambalButton = document.getElementById("sambalButton");
+const buleButton = document.getElementById("buleButton");
+const jerukNipisButton = document.getElementById("jerukNipisButton");
 
 //Audio button functions
 durianButton.addEventListener("click", function () {
@@ -51,6 +59,22 @@ belimbingButton.addEventListener("click", function () {
 
 pepayaButton.addEventListener("click", function () {
     pepayaAudio.play();
+});
+
+rendangButton.addEventListener("click", function () {
+    rendangAudio.play();
+});
+
+sambalButton.addEventListener("click", function () {
+    sambalAudio.play();
+});
+
+buleButton.addEventListener("click", function () {
+    buleAudio.play();
+});
+
+jerukNipisButton.addEventListener("click", function () {
+    jerukNipisAudio.play();
 });
 
 });
