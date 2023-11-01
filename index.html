@@ -2,6 +2,7 @@
 <html>
    <head>
       <title>Tropical Fruits of Indonesia: The Visitor's Must-Try List</title>
+      <script src="script.js"></script>
    </head>
    <body>
       <!-- Write your HTML in this file! -->
@@ -30,18 +31,11 @@
       <article>
          <section id="durian-fruit">
             <h2>Durian</h2>
-            <button onclick="durian()" type="button">Durian</button>
+            <button id="durianButton">Durian</button>
             <audio id="durian">
                <source src="./indonesian-fruit-audio-recordings/durianTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <script>
-               let durianAudio = document.getElementById("durian");
-   
-               function durian() {
-               durianAudio.play();
-               }
-            </script>
             <br>
             <br>
             <img src="./images/durian.jpg" 
@@ -63,18 +57,11 @@
          <section id="passion-fruit">
 
             <h2>Passion Fruit (Markisa)</h2>
-            <button onclick="markisa()" type="button">Markisa</button>
+            <button id="markisaButton">Markisa</button>
             <audio id="markisa">
                <source src="./indonesian-fruit-audio-recordings/markisaTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <script>
-               let markisaAudio = document.getElementById("markisa");
-   
-               function markisa() {
-               markisaAudio.play();
-               }
-            </script>
             <br>
             <br>
                <img src="./images/markisa.jpg" 
@@ -88,18 +75,11 @@
 
          <section id="dragon-fruit">
             <h2>Dragon Fruit (Buah Naga)</h2>
-            <button onclick="buahNaga()" type="button">Buah Naga</button>
+            <button id="buahNagaButton">Buah Naga</button>
             <audio id="buah-naga">
                <source src="./indonesian-fruit-audio-recordings/buah-nagaTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <script>
-               let buahNagaAudio = document.getElementById("buah-naga");
-   
-               function buahNaga() {
-               buahNagaAudio.play();
-               }
-            </script>
             <br>
             <br>
                <img src="./images/buah-naga.jpg"
@@ -115,18 +95,11 @@
 
          <section id="jackfruit">
             <h2>Jackfruit (Nangka)</h2>
-            <button onclick="nangka()" type="button">Nangka</button>
+            <button id="nangkaButton">Nangka</button>
             <audio id="nangka">
                <source src="./indonesian-fruit-audio-recordings/nangkaTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <script>
-               let nangkaAudio = document.getElementById("nangka");
-   
-               function nangka() {
-               nangkaAudio.play();
-               }
-            </script>
             <br>
             <br>
                <img src="./images/nangka.jpg" 
@@ -139,8 +112,9 @@
 
                <p>Jackfruit is a versitale fruit. The unripened green fruit and seeds can be cooked in savory dishes, and
                some vegetarians even like to use it as a meat substitute. My favorite form of jackfruit is when it is
-               added to a curry and served with a traditional Padang dish called <em>rendang</em> as well as rice, vegetables, 
-               and a spicy sauce commonly served with Indonesian dishes called <em>sambal</em>. When cooked this way, 
+               added to a curry and served with a traditional Padang dish called 
+               <em><a href="https://en.wikipedia.org/wiki/Rendang">rendang</a></em> as well as rice, vegetables, 
+               and a spicy sauce commonly served with Indonesian dishes called <em><a href="https://en.wikipedia.org/wiki/Sambal">sambal</a></em>. When cooked this way, 
                jackfruit has a stringy texture (kind of like meat), and a more neutral flavor that will absorb the flavor
                of the dish it is being cooked in. I've actually never tried the ripened, yellow jackfruit, but I have heard 
                that it has a sweeter flavor than the less ripe green fruit.</p>
@@ -148,18 +122,11 @@
 
          <section id="rambutan-fruit">
             <h2>Rambutan</h2>
-            <button onclick="rambutan()" type="button">Rambutan</button>
+            <button id="rambutanButton">Rambutan</button>
             <audio id="rambutan">
                <source src="./indonesian-fruit-audio-recordings/rambutanTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <script>
-               let rambutanAudio = document.getElementById("rambutan");
-   
-               function rambutan() {
-               rambutanAudio.play();
-               }
-            </script>
             <br>
             <br>
                <img src="./images/rambutan.jpg" 
@@ -172,18 +139,11 @@
 
          <section id="snake-fruit">
             <h2>Snake Fruit (Salak)</h2>
-            <button onclick="salak()" type="button">Salak</button>
+            <button id="salakButton">Salak</button>
             <audio id="salak">
                <source src="./indonesian-fruit-audio-recordings/salakTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <script>
-               let salakAudio = document.getElementById("salak");
-   
-               function salak() {
-               salakAudio.play();
-               }
-            </script>
             <br>
             <br>
             <img src="./images/salak.jpg" 
@@ -199,43 +159,29 @@
 
          <section id="star-fruit">
             <h2>Star Fruit (Belimbing)</h2>
-            <button onclick="belimbing()" type="button">Belimbing</button>
+            <button id="belimbingButton">Belimbing</button>
             <audio id="belimbing">
                <source src="./indonesian-fruit-audio-recordings/belimbingTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <script>
-               let belimbingAudio = document.getElementById("belimbing");
-   
-               function belimbing() {
-               belimbingAudio.play();
-               }
-            </script>
             <br>
             <br>
             <img src="./images/belimbing.jpg"
             alt="Star Fruit" style="width:500px">
                <p>Star fruit holds a special place in my heart because it was one of the first Indonesian words that my one year old learned 
                when we first moved to Indonesia. The Indonesian word for &quot;star fruit&quot; is <em>belimbing</em>, and it is so cute to hear a little 
-               <em>bule</em> (white) boy saying &quot;<em>belimbing</em>, <em>belimbing</em>!&quot;. Indonesians loved it so much when my kids would try to speak their language, too. Star 
+               <em><a href="https://en.wikipedia.org/wiki/Bule_(term)">bule</a></em> (white) boy saying &quot;<em>belimbing</em>, <em>belimbing</em>!&quot;. Indonesians loved it so much when my kids would try to speak their language, too. Star 
                fruit actually looks like a star when it is sliced. The fruit itself is kind of firm like the fruit of a grape but star fruit 
                tastes more like a ripe pear than a grape, to me at least.</p>
          </section>
 
          <section id="papaya">
             <h2>Papaya (Pepaya)</h2>
-            <button onclick="pepaya()" type="button">Pepaya</button>
+            <button id="pepayaButton">Pepaya</button>
             <audio id="pepaya">
                <source src="./indonesian-fruit-audio-recordings/pepayaTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <script>
-               let pepayaAudio = document.getElementById("pepaya");
-   
-               function pepaya() {
-               pepayaAudio.play();
-               }
-            </script>
             <br>
             <br>
             <img src="./images/pepaya.jpg"
