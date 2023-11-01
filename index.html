@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Tropical Fruits of Indonesia: The Visitor's Must-Try List</title>
+      <title>Tropical Fruits of Indonesia: A Visitor's Guide</title>
       <script src="script.js"></script>
+      <link href="styles.css" rel="stylesheet" type="text/css" />
    </head>
    <body>
       <!-- Write your HTML in this file! -->
-      <div id="top"></div>
+      <main>
+         <div id="top"></div>
          <header>      
-            <h1>Tropical Fruits of Indonesia: The Visitor's Must-Try List</h1>
-            <p>Posted by London B.</p>
-         <p>While I grew up in Missouri, my career led me to live in Indonesia for 6 years. The thing I love most about Indonesia is its diversity. Diversity is one word 
-            that can describe almost any aspect of Indonesia. Not only are the people, languages, and cultures 
-            they represent highly diverse, but the array of natural plants, wildlife, and natural phenomena exhibit a 
-            similar level of diversity. Barack Obama lived in Indonesia for a few years of his childhood, and 
+            <h1>Tropical Fruits of Indonesia: A Visitor's Guide</h1>
+            <div class="container">
+               <div class="image">
+                  <img id="photo" src="./images/LondonBrumleve.jpg">
+               </div>
+               <div class="text">
+                 <p>Posted by London B.<p>
+               </div>
+            </div>
+            <br>
+            <br>
+            <img src="./images/fruits.png" style="width:100%" >
+
+         <p>I have had the wonderful experience of moving to Indonesia and living there for 6 years. The thing I 
+            love most about Indonesia is its diversity. Diversity is one word 
+            that can describe almost any aspect of Indonesia. Barack Obama lived in Indonesia for a few years of his childhood, and 
             he shares a similar sentiment:
          </p>
 
-         <blockquote cite="https://www.bbc.com/news/world-asia-pacific-11724063">
+         <p id=testP class = "funParagraph" cite="https://www.bbc.com/news/world-asia-pacific-11724063">
 
          “Because Indonesia is made up of thousands of islands, hundreds of languages and people from scores of regions and 
          ethnic groups, my time here helped me appreciate the humanity of all people.” - Barack Obama
 
-         </blockquote>
+         </p>
             
-         <p>I couldn't agree more! There are so many interesting things to talk about when it comes to Indonesia, the list is never-ending.
+         <p>I couldn't agree more! Not only are the people, languages, and cultures 
+            they represent highly diverse, but the array of natural plants, wildlife, and natural phenomena exhibit a 
+            similar level of diversity. 
+            There are so many interesting things to talk about when it comes to Indonesia. The list is never-ending.
             In this article I want to talk about the variety of tropical fruits that are local to Indonesia. What 
             follows is a summary of my top tropical fruit recommendations to try for those who are visiting Indonesia. Each one 
             of these is sure to provide a memorable experience!
          </p>
+         <h2 id="mainHeading">Contents:</h2>
+
          <a href="#durian-fruit">Durian</a> <br>
          <a href="#passion-fruit">Passion Fruit</a><br>
          <a href="#dragon-fruit">Dragon Fruit</a> <br>
@@ -39,19 +56,15 @@
          <a href="#papaya">Papaya</a> <br>
 
       </header>
-      <main>
-      <article>
-         <section id="durian-fruit">
-            <h2>Durian</h2>
-            <button id="durianButton">Durian</button>
+         <article id="durian-fruit">
+            <h2>Durian   <button id="durianButton" style='font-size:15px'><class='fas'>&#128266</i></button></h2>
+            
             <audio id="durian">
                <source src="./indonesian-fruit-audio-recordings/durianTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <br>
-            <br>
             <img src="./images/durian.jpg" 
-            alt = "durian fruit" style="width:500px;">
+            alt = "durian fruit" style="width:100%;">
                <p>The word <em>durian</em> is derived from the Malay word for &quot;thorns&quot;. 
                And by looking at it, it is easy to see why it has been named the 
                &quot;thorny fruit&quot;. In my opinion, a durian just looks like something a person should not eat.
@@ -64,38 +77,32 @@
                having a reputation around Indonesia for being durian lovers. Even though I did not 
                like it when I tried it, I still would recommend that if you are ever in Indonesia,
                make an effort to get your hands on some durian. The experience is one to remember!</p>
-         </section>
+               </article>
 
-         <section id="passion-fruit">
+         <article id="passion-fruit">
 
-            <h2>Passion Fruit (Markisa)</h2>
-            <button id="markisaButton">Markisa</button>
+            <h2>Passion Fruit (Markisa)   <button id="markisaButton"style='font-size:15px'><class='fas'>&#128266</i></button></h2>
             <audio id="markisa">
                <source src="./indonesian-fruit-audio-recordings/markisaTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <br>
-            <br>
                <img src="./images/markisa.jpg" 
-               alt = "passion fruit" style = "width:500px;">
+               alt = "passion fruit" style = "width:100%;">
                <p>One fruit that I enjoyed while in Indonesia was <em>markisa</em>, which 
                is the Indonesian word for &quot;passion fruit&quot;. At times we would drive up into the mountains 
                and they always had the best markisa there. You can buy it in bundles by the kilogram, 
                tear it open with your hands, and scoop out the interior with a spoon to enjoy a delicious,
                unique citrus flavor that is (when ripened to perfection) a little sweet.</p>
-         </section>
+         </article>
 
-         <section id="dragon-fruit">
-            <h2>Dragon Fruit (Buah Naga)</h2>
-            <button id="buahNagaButton">Buah Naga</button>
+         <article id="dragon-fruit">
+            <h2>Dragon Fruit (Buah Naga)   <button id="buahNagaButton"style='font-size:15px'><class='fas'>&#128266</i></button></h2>
             <audio id="buah-naga">
                <source src="./indonesian-fruit-audio-recordings/buah-nagaTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <br>
-            <br>
                <img src="./images/buah-naga.jpg"
-               alt="dragon fruit" style="width: 500px">
+               alt="dragon fruit" style="width: 100%">
                <p>Dragon fruit, or <em>buah naga</em>, is originally from the Americas, but it is very commonly grown in Indonesia.
                I associate it with Indonesia as well. It grows on a cactus plant, and the fruit inside 
                can be either red or white. The two colors of fruit taste similar enough to one another, and 
@@ -103,19 +110,16 @@
                bit crunchy because of all of the little black seeds in it. If you are going to eat red dragon 
                fruit (my personal favorite), you will want to be sure and not get the fruit on your clothes 
                because it will stain very easily.</p>
-         </section>
+         </article>
 
-         <section id="jackfruit">
-            <h2>Jackfruit (Nangka)</h2>
-            <button id="nangkaButton">Nangka</button>
+         <article id="jackfruit">
+            <h2>Jackfruit (Nangka)   <button id="nangkaButton"style='font-size:15px'><class='fas'>&#128266</i></button></h2>
             <audio id="nangka">
                <source src="./indonesian-fruit-audio-recordings/nangkaTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <br>
-            <br>
                <img src="./images/nangka.jpg" 
-               alt="jackfruit" style="width: 500px">
+               alt="jackfruit" style="width: 100%">
                <p>Jackfruit, or <em>nangka</em>, grows plentifully on trees in Indonesia. Even driving through town, you will 
                many times be able to see the tall jackfruit trees with the massive 35-40 lb jackfruit hanging from them.
                For me, I was always a little bit anxious to stand too close to those trees, out of fear that a 
@@ -130,36 +134,30 @@
                jackfruit has a stringy texture (kind of like meat), and a more neutral flavor that will absorb the flavor
                of the dish it is being cooked in. I've actually never tried the ripened, yellow jackfruit, but I have heard 
                that it has a sweeter flavor than the less ripe green fruit.</p>
-         </section>
+         </article>
 
-         <section id="rambutan-fruit">
-            <h2>Rambutan</h2>
-            <button id="rambutanButton">Rambutan</button>
+         <article id="rambutan-fruit">
+            <h2>Rambutan   <button id="rambutanButton"style='font-size:15px'><class='fas'>&#128266</i></button></h2>
             <audio id="rambutan">
                <source src="./indonesian-fruit-audio-recordings/rambutanTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <br>
-            <br>
                <img src="./images/rambutan.jpg" 
-               alt="rambutan" style="width: 500px">
+               alt="rambutan" style="width: 100%">
                <p><em>Rambutan</em> is known as the &quot;hairy fruit&quot; as its name is derived from the Malay word for &quot;hair&quot;. To eat rambutan, you 
                can peel off the hairy rind by hand and then enjoy the white fruit that is inside. Rambutan fruit has a pit inside 
                that you can either eat around or spit out when you are finished. It is very easy to open and eat. It has a flavor 
                similar to a pear mixed with a grape flavor. The texture of the fruit is soft and easy to chew.</p>
-         </section>
+         </article>
 
-         <section id="snake-fruit">
-            <h2>Snake Fruit (Salak)</h2>
-            <button id="salakButton">Salak</button>
+         <article id="snake-fruit">
+            <h2>Snake Fruit (Salak)   <button id="salakButton"style='font-size:15px'><class='fas'>&#128266</i></button></h2>
             <audio id="salak">
                <source src="./indonesian-fruit-audio-recordings/salakTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <br>
-            <br>
             <img src="./images/salak.jpg" 
-            alt="snake fruit" style="width:500px">
+            alt="snake fruit" style="width:100%">
                <p>Tropical fruits are no joke! Whether they are highly potetnt like durian, giant like jackfruit, or brightly colored like
                rambutan and dragon fruit, the one thing they all have in common is how intense they seem! Snake fruit, called 
                <em>salak</em> in Indonesian, is no exception, and it is given the name &quot;snake fruit&quot; for reasons that you will probably 
@@ -167,42 +165,36 @@
                to snake skin! Snake fruit also has a pit that you don't eat. It is hard to describe 
                the way snake fruit tastes. The best word I can think of is &quot;tropical&quot;, kind of a mix of sweet and citrusy like pineapple 
                blended with apple or banana. Some salak are more on the sweet side but some are more sour, depending on the variety.</p>
-         </section>
+         </article>
 
-         <section id="star-fruit">
-            <h2>Star Fruit (Belimbing)</h2>
-            <button id="belimbingButton">Belimbing</button>
+         <article id="star-fruit">
+            <h2>Star Fruit (Belimbing)   <button id="belimbingButton"style='font-size:15px'><class='fas'>&#128266</i></button></h2>
             <audio id="belimbing">
                <source src="./indonesian-fruit-audio-recordings/belimbingTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <br>
-            <br>
             <img src="./images/belimbing.jpg"
-            alt="Star Fruit" style="width:500px">
+            alt="Star Fruit" style="width:100%">
                <p>Star fruit holds a special place in my heart because it was one of the first Indonesian words that my one year old learned 
                when we first moved to Indonesia. The Indonesian word for &quot;star fruit&quot; is <em>belimbing</em>, and it is so cute to hear a little 
                <em><a href="https://en.wikipedia.org/wiki/Bule_(term)">bule</a></em> (white) boy saying &quot;<em>belimbing</em>, <em>belimbing</em>!&quot; Indonesians loved it so much when my kids would try to speak their language, too. Star 
                fruit actually looks like a star when it is sliced. The fruit itself is kind of firm like the fruit of a grape but star fruit 
                tastes more like a ripe pear than a grape, to me at least.</p>
-         </section>
+         </article>
 
-         <section id="papaya">
-            <h2>Papaya (Pepaya)</h2>
-            <button id="pepayaButton">Pepaya</button>
+         <article id="papaya">
+            <h2>Papaya (Pepaya)   <button id="pepayaButton"style='font-size:15px'><class='fas'>&#128266</i></button></h2>
             <audio id="pepaya">
                <source src="./indonesian-fruit-audio-recordings/pepayaTrimmedAudio.mp3" type="audio/mp3">
                Your browser does not support the audio element.
             </audio>
-            <br>
-            <br>
             <img src="./images/pepaya.jpg"
-            alt="papaya served with lime" style="width:500px">
+            alt="papaya served with lime" style="width:100%">
                <p>For me, when in Indonesia, the really exotic fruits were fun to try. However, my go-to fruit option for my family was papaya 
                served with <em>jeruk nipis</em> (lime). The way the flavors of the ripe papaya and the local limes interact with 
                one another is nothing less than perfection. This was a favorite for my kids too! To them, it tastes like candy. </p>
-         </section>
-         <section>
+         </article>
+         <article>
          <h2>Harvest Season</h2>
             <p>While Indonesia grows and harvests most of these fruits all year round, there are some general guidelines to what is considered 
                <q>in season</q>. The following table shows the best times of year to try the fruits described in this article. 
@@ -354,8 +346,7 @@
                   <td>x</td>
                 </tr>
              </table>
-         </section>
-      </article>
+         </article>
       <br>
    </body>
 
