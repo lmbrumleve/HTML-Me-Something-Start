@@ -10,14 +10,7 @@
          <div id="top"></div>
          <header>      
             <h1>Tropical Fruits of Indonesia: A Visitor's Guide</h1>
-            <div class="container">
-               <div class="image">
-                  <img id="photo" src="./images/LondonBrumleve.jpg">
-               </div>
-               <div class="text">
-                 <p>Posted by London B.<p>
-               </div>
-            </div>
+
          </header>
 
          <div>
@@ -48,22 +41,39 @@
             of these is sure to provide a memorable experience!
          </p>
          <div class="dropdown">
-         <h2 id="mainHeading"><button onclick="myFunction()" class="dropbtn">Contents:</button></h2>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#"><a href="#durian-fruit">Durian</a></a>
-              <a href="#"><a href="#passion-fruit">Passion Fruit</a></a>
-              <a href="#"><a href="#dragon-fruit">Dragon Fruit</a></a>
+         <h2 id="mainHeading"><button onclick="myFunction()" class="dropbtn">Contents</button></h2>
+            <div id="contentDropdown" class="dropdown-content">
+              <a href="#durian-fruit">Durian</a>
+              <a href="#passion-fruit">Passion Fruit</a>
+              <a href="#dragon-fruit">Dragon Fruit</a>
+              <a href="#jackfruit">Jackfruit</a> 
+              <a href="#rambutan-fruit">Rambutan</a>
+              <a href="#snake-fruit">Snake Fruit</a>
+              <a href="#star-fruit">Star Fruit</a>
+              <a href="#papaya">Papaya</a>
             </div>
           </div> 
-          <br>
-         <a href="#durian-fruit">Durian</a> <br>
-         <a href="#passion-fruit">Passion Fruit</a><br>
-         <a href="#dragon-fruit">Dragon Fruit</a> <br>
-         <a href="#jackfruit">Jackfruit</a> <br>
-         <a href="#rambutan-fruit">Rambutan</a> <br>
-         <a href="#snake-fruit">Snake Fruit</a> <br>
-         <a href="#star-fruit">Star Fruit</a> <br>
-         <a href="#papaya">Papaya</a> <br>
+          <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("contentDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
          </article>
 
          <article id="durian-fruit">
@@ -379,6 +389,14 @@
 
    </main>
       <footer>
-         <div class="footer"><a href="#top">Back to the top</a> 
+         <div class="container">
+            <div class="image">
+               <img id="photo" src="./images/LondonBrumleve.jpg">
+            </div>
+            <div class="text">
+              <p>Posted by London B.<p>
+            </div>
+            <div class="footer"><a href="#top">Back to the top</a> 
+         </div>
       </footer>
 </html>

@@ -9,7 +9,7 @@ body {
 
 main {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     padding-bottom: 35px;
     padding-left: 5%;
     padding-right: 10%;
@@ -19,11 +19,12 @@ main {
 
 header {
     margin-top: 75px;
-    padding-left: 8%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 0%;
     padding-bottom: 60px;
     padding-top: 40px;
     background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 article {
@@ -40,8 +41,13 @@ color: green;
 }
 
 footer {
-    margin: 5px;
-    padding-bottom: 20px;
+    margin: 0;
+    padding: 50px;
+    background-color: rgb(231, 184, 168);
+}
+
+.footer {
+    padding-top: 15px;
 }
 
 #mainHeading {
@@ -56,8 +62,9 @@ footer {
 .container {
     display: grid;
     align-items: left; 
-    grid-template-columns: 8% 92%;
+    grid-template-columns: 8% 76% 16%;
     column-gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
    }
    
     #photo {
@@ -99,7 +106,7 @@ table {
 
   .fruitColumn {
     text-align: left; 
-    width: 15%;
+    width: 20%;
     background-color: rgb(231, 184, 168);
     color: white;
   }
